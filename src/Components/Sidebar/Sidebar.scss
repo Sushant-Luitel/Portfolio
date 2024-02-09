@@ -1,8 +1,44 @@
 .sidebar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  width: 200px;
-  background-color: #f3f5f8;
+  display: flex;
+  flex-direction: column;
+  background: white;
+  color: black;
+  justify-content: center;
+
+  .bg {
+    background: white;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 350px;
+
+    .Links {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1em;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+      font-size: 1.5rem;
+    }
+  }
+
+  .sidebar-button {
+    cursor: pointer;
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: fixed;
+    top: 25px;
+    left: 25px;
+  }
 }
