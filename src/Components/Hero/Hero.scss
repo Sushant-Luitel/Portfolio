@@ -1,0 +1,32 @@
+.Hero {
+  height: calc(100vh - 100px);
+  max-width: 90%;
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  justify-content: space-between;
+
+  img {
+    width: 500px;
+  }
+
+  .hero-text {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 2em;
+    width: 60%;
+    .buttons {
+      display: flex;
+      gap: 1.5em;
+    }
+    button {
+      background-color: lightseagreen;
+      color: white;
+      padding: 1em 0.8em;
+      border-radius: 10px;
+      border: none;
+      cursor: pointer;
+    }
+  }
+}
