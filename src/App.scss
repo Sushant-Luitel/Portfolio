@@ -1,6 +1,4 @@
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 
@@ -9,9 +7,11 @@ html {
   scroll-behavior: smooth !important;
 }
 body {
+  margin: 0;
   padding-left: 250px;
+  padding-right: 2em;
   font-family: sans-serif;
-  background: #0c0c1d;
+  background: linear-gradient(#0c0c1d, #8282e9);
   color: lightgray;
 }
 

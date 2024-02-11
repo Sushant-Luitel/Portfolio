@@ -1,32 +1,48 @@
 .Hero {
-  height: calc(100vh - 100px);
-  max-width: 90%;
-  display: flex;
-  overflow: hidden;
-  align-items: center;
-  justify-content: space-between;
+  padding: 1em 0;
+  .row {
+    display: flex;
+    justify-content: space-around;
+  }
+  .container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    .hero-text {
+      align-self: center;
+      h2 {
+        color: purple;
+      }
+      h1 {
+        font-size: 3rem;
+      }
+    }
+
+    button {
+      display: inline-block;
+      padding: 1em 0.75em;
+      color: black;
+
+      border: none;
+      margin-right: 15px;
+      border-radius: 20px;
+    }
+
+    .btn-navy {
+      background-color: rgb(2, 5, 30);
+      color: white;
+    }
+    .btn-white {
+      background-color: rgb(237, 230, 230);
+    }
+  }
+}
+
+.image-container {
+  max-width: 100%;
 
   img {
-    width: 500px;
-  }
-
-  .hero-text {
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    gap: 2em;
-    width: 60%;
-    .buttons {
-      display: flex;
-      gap: 1.5em;
-    }
-    button {
-      background-color: lightseagreen;
-      color: white;
-      padding: 1em 0.8em;
-      border-radius: 10px;
-      border: none;
-      cursor: pointer;
-    }
+    width: 100%;
   }
 }
