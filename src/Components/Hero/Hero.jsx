@@ -26,6 +26,19 @@ const textVariants = {
     },
   },
 };
+const SliderVariants = {
+  initial: {
+    x: 0,
+  },
+  animate: {
+    x: "-180%",
+    transition: {
+      repeat: Infinity,
+      repeatType: "mirror",
+      duration: 15,
+    },
+  },
+};
 
 const Hero = () => {
   return (
@@ -60,8 +73,16 @@ const Hero = () => {
             alt="scroll"
             width={30}
           />
+          <motion.div
+            variants={SliderVariants}
+            className="sliding-text-container"
+            initial="initial"
+            animate="animate"
+          >
+            Developer Content Creator
+          </motion.div>
         </motion.div>
-        <div className="sliding-text-container">Developer Content Creator</div>
+
         <div className="image-container">
           <img src={profile} alt="profile" />
         </div>

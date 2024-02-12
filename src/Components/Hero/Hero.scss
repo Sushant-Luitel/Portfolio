@@ -38,6 +38,17 @@
     }
   }
 }
+
+.sliding-text-container {
+  position: absolute;
+  font-size: 50vh;
+  bottom: 100px;
+  white-space: nowrap;
+  color: rgba(3, 2, 2, 0.066);
+  width: 40%;
+  font-weight: bold;
+}
+
 .scroll-image {
   margin-top: 1em;
 }
