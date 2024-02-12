@@ -17,6 +17,14 @@ const textVariants = {
       staggerChildren: 0.1,
     },
   },
+  scrollButton: {
+    opacity: 0,
+    y: 10,
+    transition: {
+      duration: 2,
+      repeat: Infinity,
+    },
+  },
 };
 
 const Hero = () => {
@@ -47,6 +55,7 @@ const Hero = () => {
           <motion.img
             className="scroll-image"
             variants={textVariants}
+            animate="scrollButton"
             src={scroll}
             alt="scroll"
             width={30}
